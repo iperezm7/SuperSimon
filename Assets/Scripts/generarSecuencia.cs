@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class GenerarSecuencias : MonoBehaviour
 {
     [SerializeField] Button[] botones;
     [SerializeField] public int[] secuencia = {0, 0, 0, 0, 0, 0};
@@ -14,7 +14,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
        
     }
-    IEnumerator Esperar()
+   public IEnumerator Esperar()
     { 
         puedeJugar = false;
         yield return new WaitForSeconds(1f);
